@@ -42,6 +42,9 @@
                                     <li class="nav-item">
                                         <a class="nav-link text-light" asp-area="Admin" asp-controller="OrderItems" asp-action="Index">OrderItems</a>
                                     </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-light" asp-area="Admin" asp-controller="ComplaintShow" asp-action="Select">Complaints</a>
+                                    </li>
                                 }
                             }
                             @if (User.Identity.IsAuthenticated == true && User.IsInRole(Roles.Admin.ToString()))

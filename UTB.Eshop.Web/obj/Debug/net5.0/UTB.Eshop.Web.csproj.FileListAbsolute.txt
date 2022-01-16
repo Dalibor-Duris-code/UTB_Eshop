@@ -192,3 +192,5 @@ C:\Users\duris\Desktop\utb.eshop_2021\UTB.Eshop.Web\obj\Debug\net5.0\ref\UTB.Esh
 C:\Users\duris\Desktop\utb.eshop_2021\UTB.Eshop.Web\obj\Debug\net5.0\UTB.Eshop.Web.pdb
 C:\Users\duris\Desktop\utb.eshop_2021\UTB.Eshop.Web\obj\Debug\net5.0\UTB.Eshop.Web.genruntimeconfig.cache
 C:\Users\duris\Desktop\utb.eshop_2021\UTB.Eshop.Web\obj\Debug\net5.0\Razor\Areas\Customer\Views\Complain\ComplainIt.cshtml.g.cs
+C:\Users\duris\Desktop\utb.eshop_2021\UTB.Eshop.Web\obj\Debug\net5.0\Razor\Areas\Admin\Views\ComplaintShow\Index.cshtml.g.cs
+C:\Users\duris\Desktop\utb.eshop_2021\UTB.Eshop.Web\obj\Debug\net5.0\Razor\Areas\Admin\Views\ComplaintShow\Select.cshtml.g.cs

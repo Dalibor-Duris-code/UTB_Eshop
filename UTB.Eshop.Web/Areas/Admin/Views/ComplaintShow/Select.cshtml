@@ -1,0 +1,51 @@
+﻿@model IList<Complain>
+@{
+    ViewData["Title"] = "Complain Items";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>This page shows all Product Items for admin.</p>
+
+<a asp-action="Create">Create new Product Item</a>
+
+@{
+    if (Model != null && Model.Count > 0)
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">OrderNumber</th>
+                    <th scope="col">ProductID</th>
+                    <th scope="col">Describe</th>
+                    <th scope="col">Edit</th>
+                    <th scope="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    for (int i = 0; i < Model.Count; ++i)
+                    {
+                                <tr>
+                                    <td>@Model[i].ID</td>
+                                    <td>@Model[i].OrderNumber</td>
+                                    <td>@Model[i].ProductID</td>
+                                    <td>@Model[i].Reason</td>
+                                   
+                                    <td><a asp-action="Edit" asp-route-ID="@Model[i].ID">edit</a></td>
+                                    <td><a asp-action="Delete" asp-route-ID="@Model[i].ID" onclick="return ConfirmDelete();">delete</a></td>
+                                </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>Products are empty.</p>
+    }
+}
+@section Scripts
+{
+    <script src="~/js/alerts.js"></script>
+}

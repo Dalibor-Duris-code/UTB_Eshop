@@ -51,13 +51,9 @@
                                     <td class="col-sm-1">@itemOrderItems.Price.ToString("C2")</td>
 
                                     <td>
-                                        <a asp-controller="Complain"
-                                           asp-action="ComplainIt"
-                                           asp-route-name="@itemOrderItems.Product.Name"
-                                           asp-route-productID="@itemOrderItems.Product.ID"
-                        
-                                           asp-area="Customer">
-                                            <h2>Complain</h2>
+                                        <a asp-controller="Complain" asp-action="ComplainIt" asp-route-name="@itemOrderItems.Product.Name"
+                                           asp-route-productID="@itemOrderItems.Product.ID" asp-route-OrderNumber="@itemOrderItems.Order.OrderNumber" asp-area="Customer" type="button" class="btn btn-primary">
+                                           Create complain
                                         </a>
                                     </td> 
                                 </tr>

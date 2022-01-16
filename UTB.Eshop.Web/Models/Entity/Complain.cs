@@ -15,20 +15,12 @@ namespace UTB.Eshop.Web.Models.Entity
         [Required]
         public int ProductID { get; set; }
 
+        [Required]
+        public string OrderNumber { get; set; }
+
         [StringLength(50)]
         [Required]
         public string Reason { get; set; }
-
-
-        /* // new
-         [StringLength(3)]
-
-         public string isDigital { get; set; }
-
-         // Bylo zboží vráceno včas
-         [StringLength(50)]
-
-         public string ManagerNote { get; set; }*/
     }
 }
 

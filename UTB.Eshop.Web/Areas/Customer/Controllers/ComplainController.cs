@@ -13,11 +13,6 @@ namespace UTB.Eshop.Web.Areas.Customer.Controllers
     [Authorize(Roles = nameof(Roles.Customer))]
     public class ComplainController : Controller
     {
-        // GET: /<controller>/
-        public IActionResult Index()
-        {
-            return View();
-        }
 
         readonly EshopDbContext eshopDbContext;
 
@@ -29,9 +24,10 @@ namespace UTB.Eshop.Web.Areas.Customer.Controllers
 
 
         [HttpGet]
-        public IActionResult ComplainIt(int productID)
+        public IActionResult ComplainIt(int productID,string OrderNumber)
         {
             ViewData["ProductID"] = productID;
+            ViewData["OrderNumber"] = OrderNumber;
             return View();
         }
 
