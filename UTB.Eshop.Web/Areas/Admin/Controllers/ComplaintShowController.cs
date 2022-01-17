@@ -29,7 +29,41 @@ namespace UTB.Eshop.Web.Areas.Admin.Controllers
 
             return View(complains);
         }
-        
 
+        public IActionResult Edit(int ID)
+        {
+            Complain prodFromDatabase = eshopDbContext.Complaints.FirstOrDefault(com => com.ID == ID);
+
+            if (prodFromDatabase != null)
+            {
+                return View(prodFromDatabase);
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(Complain complain)
+        {
+            Complain prodFromDatabase = eshopDbContext.Complaints.FirstOrDefault(com => com.ID == complain.ID);
+
+            if (prodFromDatabase != null)
+            {
+                prodFromDatabase.OrderNumber = complain.OrderNumber;
+                prodFromDatabase.Reason = complain.Reason;
+                prodFromDatabase.ProductID = complain.ProductID;
+
+                await eshopDbContext.SaveChangesAsync();
+
+                return RedirectToAction(nameof(Select));
+            }
+            else
+            {
+                return NotFound();
+            }
+
+        }
     }
 }

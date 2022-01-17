@@ -194,3 +194,6 @@ C:\Users\duris\Desktop\utb.eshop_2021\UTB.Eshop.Web\obj\Debug\net5.0\UTB.Eshop.W
 C:\Users\duris\Desktop\utb.eshop_2021\UTB.Eshop.Web\obj\Debug\net5.0\Razor\Areas\Customer\Views\Complain\ComplainIt.cshtml.g.cs
 C:\Users\duris\Desktop\utb.eshop_2021\UTB.Eshop.Web\obj\Debug\net5.0\Razor\Areas\Admin\Views\ComplaintShow\Index.cshtml.g.cs
 C:\Users\duris\Desktop\utb.eshop_2021\UTB.Eshop.Web\obj\Debug\net5.0\Razor\Areas\Admin\Views\ComplaintShow\Select.cshtml.g.cs
+C:\Users\duris\Desktop\utb.eshop_2021\UTB.Eshop.Web\obj\Debug\net5.0\Razor\Areas\Admin\Views\ComplaintShow\CreateEditForm.cshtml.g.cs
+C:\Users\duris\Desktop\utb.eshop_2021\UTB.Eshop.Web\obj\Debug\net5.0\Razor\Areas\Admin\Views\ComplaintShow\Edit.cshtml.g.cs
+C:\Users\duris\Desktop\utb.eshop_2021\UTB.Eshop.Web\obj\Debug\net5.0\Razor\Areas\Customer\Views\ShowComplaints\Index.cshtml.g.cs

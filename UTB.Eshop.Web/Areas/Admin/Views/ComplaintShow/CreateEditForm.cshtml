@@ -1,0 +1,29 @@
+﻿@using UTB.Eshop.Web.Areas.Admin.Controllers
+@model Complain
+
+@{
+    if (String.IsNullOrWhiteSpace(ViewBag.Action) == false)
+    {
+    <form asp-action="@ViewBag.Action" method="post" enctype="multipart/form-data">
+        @{
+            if (ViewBag.Action == nameof(ComplaintShowController.Edit))
+            {
+                <input type="hidden" asp-for="ID" class="form-control">
+            }
+        }
+        <div class="form-group">
+            <label asp-for="OrderNumber"></label>
+            <input asp-for="OrderNumber" type="text" class="form-control" placeholder="Enter OrderName">
+        </div>
+        <div class="form-group">
+            <label asp-for="ProductID"></label>
+            <input asp-for="ProductID" type="text" class="form-control" placeholder="Enter ProductID">
+        </div>
+        <div class="form-group">
+            <label asp-for="Reason"></label>
+            <input asp-for="Reason" class="form-control" placeholder="Enter reason">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    }
+}

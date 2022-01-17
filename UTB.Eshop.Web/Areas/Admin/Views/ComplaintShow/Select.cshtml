@@ -19,7 +19,6 @@
                     <th scope="col">ProductID</th>
                     <th scope="col">Describe</th>
                     <th scope="col">Edit</th>
-                    <th scope="col">Delete</th>
                 </tr>
             </thead>
             <tbody>
@@ -33,7 +32,6 @@
                                     <td>@Model[i].Reason</td>
                                    
                                     <td><a asp-action="Edit" asp-route-ID="@Model[i].ID">edit</a></td>
-                                    <td><a asp-action="Delete" asp-route-ID="@Model[i].ID" onclick="return ConfirmDelete();">delete</a></td>
                                 </tr>
                     }
                 }
