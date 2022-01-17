@@ -1,12 +1,11 @@
 ﻿@model IList<Complain>
 @{
-    ViewData["Title"] = "Complain Items";
+    ViewData["Title"] = "Complain Items ADMIN PAGE";
 }
 <h1>@ViewData["Title"]</h1>
 
-<p>This page shows all Product Items for admin.</p>
+<p>This page shows all Complaints Items for admin.</p>
 
-<a asp-action="Create">Create new Product Item</a>
 
 @{
     if (Model != null && Model.Count > 0)
@@ -16,7 +15,7 @@
                 <tr>
                     <th scope="col">ID</th>
                     <th scope="col">OrderNumber</th>
-                    <th scope="col">ProductID</th>
+                    <th scope="col">Name</th>
                     <th scope="col">Describe</th>
                     <th scope="col">Complain Status</th>
                     <th scope="col">Edit</th>
@@ -29,7 +28,7 @@
                                 <tr>
                                     <td>@Model[i].ID</td>
                                     <td>@Model[i].OrderNumber</td>
-                                    <td>@Model[i].ProductID</td>
+                                    <td>@Model[i].UserName</td>
                                     <td>@Model[i].Describe</td>
                                     <td>@Model[i].ComplaintStatus</td>
                                    

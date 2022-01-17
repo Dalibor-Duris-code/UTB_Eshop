@@ -53,7 +53,9 @@ namespace UTB.Eshop.Web.Areas.Customer.Controllers
             {
                 prodFromDatabase.OrderNumber = complain.OrderNumber;
                 prodFromDatabase.Describe = complain.Describe;
-                prodFromDatabase.ProductID = complain.ProductID;
+                prodFromDatabase.UserName = complain.UserName;
+                prodFromDatabase.LastName = complain.LastName;
+                prodFromDatabase.Email = complain.Email;
 
                 await eshopDbContext.SaveChangesAsync();
 

@@ -12,7 +12,13 @@ namespace UTB.Eshop.Web.Models.Entity
         public int ID { get; set; }
 
         [Required]
-        public int ProductID { get; set; }
+        public string UserName { get; set; }
+
+        [Required]
+        public string LastName { get; set; }
+
+        [Required]
+        public string Email { get; set; }
 
         [Required]
         public string OrderNumber { get; set; }
@@ -22,7 +28,7 @@ namespace UTB.Eshop.Web.Models.Entity
         public string Describe { get; set; }
 
         public string ComplaintStatus { get; set; }
-
+        
     }
 }
 

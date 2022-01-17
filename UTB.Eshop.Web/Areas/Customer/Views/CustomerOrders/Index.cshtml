@@ -30,7 +30,11 @@
 
 
             </table>
-
+            <td>
+                <a asp-controller="Complain" asp-action="ComplainItem" asp-route-OrderNumber="@item.OrderNumber" asp-area="Customer" type="button" class="btn btn-primary">
+                    Create complain
+                </a>
+            </td> 
             <details>
                 <summary>Details</summary>
                 <div id="order_items_@item.ID">
@@ -49,13 +53,6 @@
                                     <td class="col-sm-3">@itemOrderItems.Product.Name</td>
                                     <td class="col-sm-1">@itemOrderItems.Amount</td>
                                     <td class="col-sm-1">@itemOrderItems.Price.ToString("C2")</td>
-
-                                    <td>
-                                        <a asp-controller="Complain" asp-action="ComplainIt" asp-route-name="@itemOrderItems.Product.Name"
-                                           asp-route-productID="@itemOrderItems.Product.ID" asp-route-OrderNumber="@itemOrderItems.Order.OrderNumber" asp-area="Customer" type="button" class="btn btn-primary">
-                                           Create complain
-                                        </a>
-                                    </td> 
                                 </tr>
                             }
                         }

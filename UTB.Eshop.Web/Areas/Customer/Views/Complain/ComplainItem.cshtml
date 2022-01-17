@@ -1,0 +1,39 @@
+﻿@model Complain
+@{
+    <form asp-action="ComplainItem" method="post">
+        <div asp-validation-summary="All" class="text-danger"></div>
+        @{
+                <input value="@ViewData["OrderNumber"]" asp-for="OrderNumber" type="hidden">
+                
+        }
+
+
+        <div class="form-group">
+            <label asp-for="Describe">Complaint Describe</label>
+            <input type="text" asp-for="Describe" class="form-control">
+            <span asp-validation-for="Describe" class="text-danger"></span>
+
+            <label asp-for="UserName">Name</label>
+            <input type="text" asp-for="UserName" class="form-control">
+            <span asp-validation-for="UserName" class="text-danger"></span>
+
+            <label asp-for="LastName">LastName</label>
+            <input type="text" asp-for="LastName" class="form-control">
+            <span asp-validation-for="LastName" class="text-danger"></span>
+
+            <label asp-for="Email">Email</label>
+            <input type="text" asp-for="Email" class="form-control">
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+       
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    }
+
+
+@section Scripts
+{
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+}

@@ -24,7 +24,7 @@ namespace UTB.Eshop.Web.Areas.Customer.Controllers
 
 
         [HttpGet]
-        public IActionResult ComplainIt(int productID,string OrderNumber)
+        public IActionResult ComplainItem(int productID,string OrderNumber)
         {
             ViewData["ProductID"] = productID;
             ViewData["OrderNumber"] = OrderNumber;
@@ -32,7 +32,7 @@ namespace UTB.Eshop.Web.Areas.Customer.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> ComplainIt(Complain complaint)
+        public async Task<IActionResult> ComplainItem(Complain complaint)
         {
             eshopDbContext.Complaints.Add(complaint);
             await eshopDbContext.SaveChangesAsync();

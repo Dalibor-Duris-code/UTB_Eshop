@@ -14,8 +14,9 @@
                 <tr>
                     <th scope="col">ID</th>
                     <th scope="col">OrderNumber</th>
-                    <th scope="col">ProductID</th>
+                    <th scope="col">Name</th>
                     <th scope="col">Describe</th>
+                    <th scope="col">Status</th>
                     <th scope="col">Edit</th>
                 </tr>
             </thead>
@@ -26,8 +27,9 @@
                                 <tr>
                                     <td>@Model[i].ID</td>
                                     <td>@Model[i].OrderNumber</td>
-                                    <td>@Model[i].ProductID</td>
+                                    <td>@Model[i].UserName</td>
                                     <td>@Model[i].Describe</td>
+                                    <td>@Model[i].ComplaintStatus</td>
                                    
                                     <td><a asp-action="Edit" asp-route-ID="@Model[i].ID">edit</a></td>
                                 </tr>
