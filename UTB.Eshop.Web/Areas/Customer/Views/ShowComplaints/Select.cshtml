@@ -4,9 +4,7 @@
 }
 <h1>@ViewData["Title"]</h1>
 
-<p>This page shows all Product Items for admin.</p>
-
-<a asp-action="Create">Create new Product Item</a>
+<p>This page shows all Complains Items for customer.</p>
 
 @{
     if (Model != null && Model.Count > 0)
@@ -18,7 +16,6 @@
                     <th scope="col">OrderNumber</th>
                     <th scope="col">ProductID</th>
                     <th scope="col">Describe</th>
-                    <th scope="col">Complain Status</th>
                     <th scope="col">Edit</th>
                 </tr>
             </thead>
@@ -31,7 +28,6 @@
                                     <td>@Model[i].OrderNumber</td>
                                     <td>@Model[i].ProductID</td>
                                     <td>@Model[i].Describe</td>
-                                    <td>@Model[i].ComplaintStatus</td>
                                    
                                     <td><a asp-action="Edit" asp-route-ID="@Model[i].ID">edit</a></td>
                                 </tr>

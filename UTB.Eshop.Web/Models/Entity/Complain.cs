@@ -11,7 +11,6 @@ namespace UTB.Eshop.Web.Models.Entity
         [Required]
         public int ID { get; set; }
 
-        // [StringLength(50)]
         [Required]
         public int ProductID { get; set; }
 
@@ -20,7 +19,10 @@ namespace UTB.Eshop.Web.Models.Entity
 
         [StringLength(50)]
         [Required]
-        public string Reason { get; set; }
+        public string Describe { get; set; }
+
+        public string ComplaintStatus { get; set; }
+
     }
 }
 

@@ -24,7 +24,7 @@ namespace UTB.Eshop.Web.Areas.Customer.Controllers
 
 
         [HttpGet]
-        public IActionResult ComplainIt(int productID,string OrderNumber, string userName)
+        public IActionResult ComplainIt(int productID,string OrderNumber)
         {
             ViewData["ProductID"] = productID;
             ViewData["OrderNumber"] = OrderNumber;

@@ -52,8 +52,9 @@ namespace UTB.Eshop.Web.Areas.Admin.Controllers
             if (prodFromDatabase != null)
             {
                 prodFromDatabase.OrderNumber = complain.OrderNumber;
-                prodFromDatabase.Reason = complain.Reason;
+                prodFromDatabase.Describe = complain.Describe;
                 prodFromDatabase.ProductID = complain.ProductID;
+                prodFromDatabase.ComplaintStatus = complain.ComplaintStatus;
 
                 await eshopDbContext.SaveChangesAsync();
 

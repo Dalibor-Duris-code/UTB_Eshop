@@ -4,14 +4,15 @@
         <div asp-validation-summary="All" class="text-danger"></div>
         @{
                 <input value="@ViewData["ProductID"]" asp-for="ProductID" type="hidden">  
-                <input value="@ViewData["OrderNumber"]" asp-for="OrderNumber" type="hidden">  
+                <input value="@ViewData["OrderNumber"]" asp-for="OrderNumber" type="hidden">
+                
         }
 
 
         <div class="form-group">
-            <label asp-for="Reason">Complaint Reason</label>
-            <input type="text" asp-for="Reason" class="form-control">
-            <span asp-validation-for="Reason" class="text-danger"></span>
+            <label asp-for="Describe">Complaint Describe</label>
+            <input type="text" asp-for="Describe" class="form-control">
+            <span asp-validation-for="Describe" class="text-danger"></span>
         </div>
 
        
